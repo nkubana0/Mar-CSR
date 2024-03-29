@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.container {
+  padding-inline: 100px;
+}
+
+.nav-active {
+  box-shadow: 0px 11px 64px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  z-index: 1000;
+}
+
+header {
+  width: 100%;
+  padding: 40px;
+  position: fixed;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  gap: 10px;
+}
+header nav .menu-items {
+  color: black;
+}
+header nav .logo {
+  width: 120px;
+  height: 32px;
+}
+header nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+header nav .header-button {
+  color: white;
+  padding: 20px 40px;
+  background-color: rgb(3, 165, 155);
+  border-radius: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.hero .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 440px;
+  height: 386px;
+}
+.hero .text-container h4 {
+  text-transform: uppercase;
+}
+.hero .text-container h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.hero .text-container h1 span {
+  color: rgb(3, 165, 155);
+}
+.hero .text-container a {
+  color: white;
+  padding: 20px 40px;
+  background-color: rgb(3, 165, 155);
+  border-radius: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.trending {
+  width: 100%;
+  min-height: 50vh;
+}
+.trending h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+}
+.trending h1 span {
+  color: #03a59b;
+}
+.trending .header-p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+.trending .trending-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  margin-top: 4rem;
+}
+.trending .trending-images .long-sofa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(248, 255, 255);
+}
+.trending .trending-images .long-sofa .trending-text {
+  height: 215px;
+  width: 216px;
+}
+.trending .trending-images .long-sofa .trending-text h4 {
+  font-size: 18px;
+  padding-block: 1rem;
+}
+.trending .trending-images .long-sofa .trending-text p {
+  font-weight: 300;
+  font-size: 16px;
+}
+.trending .trending-images .long-sofa .trending-text a {
+  position: relative;
+  top: 70px;
+  color: rgb(3, 165, 155);
+  text-decoration: underline;
+}
+.trending .trending-images .long-sofa-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(248, 255, 255);
+}
+.trending .trending-images .long-sofa-2 .trending-text {
+  height: 215px;
+  width: 216px;
+}
+.trending .trending-images .long-sofa-2 .trending-text h4 {
+  font-size: 18px;
+  padding-block: 1rem;
+}
+.trending .trending-images .long-sofa-2 .trending-text p {
+  font-weight: 300;
+  font-size: 16px;
+}
+.trending .trending-images .long-sofa-2 .trending-text a {
+  position: relative;
+  top: 70px;
+  color: rgb(3, 165, 155);
+  text-decoration: underline;
+}
+
+.choose-us {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choose-us .chooseee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choose-us .chooseee .choose-container .choose-text h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.choose-us .chooseee .choose-container .choose-text h1 span {
+  color: rgb(3, 165, 155);
+}
+.choose-us .chooseee .choose-container .choose-text p {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 5rem;
+}
+.choose-us .chooseee .choose-container .choose-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.choose-us .chooseee .choose-pic {
+  width: 100%;
+  position: relative;
+  margin-top: -100px;
+}
+.choose-us .chooseee .choose-pic .office-img {
+  position: absolute;
+  top: -100px;
+  left: 50px;
+  z-index: 1;
+}
+.choose-us .chooseee .choose-pic .dots {
+  position: absolute;
+  top: -190px;
+}
+
+.inquiries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inquiries .inq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgb(236, 236, 236);
+  width: 100%;
+}
+.inquiries .inq-container .inquiries-form h3 {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+.inquiries .inq-container .inquiries-form p {
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+.inquiries .inq-container .inquiries-form form {
+  display: flex;
+  flex-direction: column;
+}
+.inquiries .inq-container .inquiries-form form .form-input {
+  width: 1120px;
+  height: 64px;
+  border-radius: 9px;
+  border: 1px solid rgb(236, 236, 236);
+  font-family: Poppins;
+  font-size: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.inquiries .inq-container .inquiries-form form .form-input-2 {
+  width: 1120px;
+  height: 170px;
+  border-radius: 9px;
+  border: 1px solid rgb(236, 236, 236);
+  font-family: Poppins;
+  font-size: 15px;
+  padding: 20px;
+  padding-bottom: 120px;
+  margin-bottom: 10px;
+}
+.inquiries .inq-container .inquiries-form form .submit {
+  width: 1120px;
+  height: 64px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: rgb(3, 165, 155);
+  font-family: Poppins;
+  color: white;
+  font-size: 18px;
+}
+.inquiries .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 200px;
+  margin-top: 50px;
+}/*# sourceMappingURL=index.css.map */
