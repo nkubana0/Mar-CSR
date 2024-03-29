@@ -237,102 +237,100 @@ header {
   }
 }
 .inquiries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+
+  .inq-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-block: 20px;
+    text-align: center;
+    border: 1px solid rgba(236, 236, 236, 1);
+    width: 100%;
 
-    .inq-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border: 1px solid rgba(236, 236, 236, 1);
-        width: 100%;
-        
-        .inquiries-form {
-          h3 {
-            font-weight: 500;
-            font-size: 32px;
-            margin-bottom: 1rem;
-          }
-          p {
-            font-weight: 300;
-            font-size: 15px;
-            margin-bottom: 2rem;
-          }
-            form {
-                display: flex;
-                flex-direction: column;
-                padding-block: 20px;
-
-                .form-input {
-                  width: 1120px;
-                  height: 64px;
-                  border-radius: 9px;
-                  border: 1px solid rgba(236, 236, 236, 1);
-                  font-family: Poppins;
-                  font-size: 15px;
-                  padding: 20px;
-                  margin-bottom: 10px;
-                }
-                .form-input-2 {
-                  width: 1120px;
-                  height: 170px;
-                  border-radius: 9px;
-                  border: 1px solid rgba(236, 236, 236, 1);
-                  font-family: Poppins;
-                  font-size: 15px;
-                  padding: 20px;
-                  padding-bottom: 120px;
-                  margin-bottom: 10px;
-                }
-                .submit {
-                  width: 1120px;
-                  height: 64px;
-                  border: 1px;
-                  border-radius: 8px;
-                  background-color: rgba(3, 165, 155, 1);
-                  font-family: Poppins;
-                  color: white;
-                  font-size: 18px;
-                }
-                
-            }
-        }
-    }
-    .contacts {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      gap: 50px;
-      margin-top: 50px;
-    }
-    .contact-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      border: 1px solid rgba(236, 236, 236, 1);
-      border-radius: 8px;
-      width: 384px;
-      height: 176px;
-      text-align: center;
-
+    .inquiries-form {
       h3 {
-        font-size: 20px;
         font-weight: 500;
+        font-size: 32px;
+        margin-bottom: 1rem;
       }
       p {
-        font-size: 18px;
-        font-weight: 400;
-        color: rgba(133, 133, 133, 1);
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: 2rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        padding-block: 20px;
+
+        .form-input {
+          width: 1120px;
+          height: 64px;
+          border-radius: 9px;
+          border: 1px solid rgba(236, 236, 236, 1);
+          font-family: Poppins;
+          font-size: 15px;
+          padding: 20px;
+          margin-bottom: 10px;
+        }
+        .form-input-2 {
+          width: 1120px;
+          height: 170px;
+          border-radius: 9px;
+          border: 1px solid rgba(236, 236, 236, 1);
+          font-family: Poppins;
+          font-size: 15px;
+          padding: 20px;
+          padding-bottom: 120px;
+          margin-bottom: 10px;
+        }
+        .submit {
+          width: 1120px;
+          height: 64px;
+          border: 1px;
+          border-radius: 8px;
+          background-color: rgba(3, 165, 155, 1);
+          font-family: Poppins;
+          color: white;
+          font-size: 18px;
+        }
       }
     }
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(236, 236, 236, 1);
+    border-radius: 8px;
+    width: 384px;
+    height: 176px;
+    text-align: center;
 
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba(133, 133, 133, 1);
+    }
+  }
 }
 .footer {
   height: 369.3px;
@@ -364,7 +362,6 @@ header {
     }
 
     .footer-nav {
-      
       ul {
         display: flex;
         gap: 10px;
