@@ -241,6 +241,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-block: 20px;
 
     .inq-container {
         display: flex;
@@ -265,6 +266,7 @@ header {
             form {
                 display: flex;
                 flex-direction: column;
+                padding-block: 20px;
 
                 .form-input {
                   width: 1120px;
@@ -306,8 +308,81 @@ header {
       align-items: center;
       justify-content: center;
       width: 100%;
-      gap: 200px;
+      gap: 50px;
       margin-top: 50px;
     }
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid rgba(236, 236, 236, 1);
+      border-radius: 8px;
+      width: 384px;
+      height: 176px;
+      text-align: center;
 
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(133, 133, 133, 1);
+      }
+    }
+
+}
+.footer {
+  height: 369.3px;
+  width: 100%;
+  background-color: rgba(3, 165, 155, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .footer-container {
+    width: 1240px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(11, 175, 165, 1);
+
+    .footer-logo {
+      width: 173.5px;
+      height: 33.3px;
+
+      p {
+        color: white;
+        width: 374px;
+        font-size: 16px;
+        font-weight: 200;
+      }
+    }
+
+    .footer-nav {
+      
+      ul {
+        display: flex;
+        gap: 10px;
+      }
+      .menu-items {
+        color: white;
+      }
+    }
+  }
+
+  .footer-copyrights {
+    p {
+      position: relative;
+      top: 10px;
+      left: 280px;
+      font-size: 18px;
+      font-weight: 400;
+      color: white;
+    }
+  }
 }

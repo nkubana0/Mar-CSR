@@ -226,6 +226,7 @@ header nav .header-button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-block: 20px;
 }
 .inquiries .inq-container {
   display: flex;
@@ -249,6 +250,7 @@ header nav .header-button {
 .inquiries .inq-container .inquiries-form form {
   display: flex;
   flex-direction: column;
+  padding-block: 20px;
 }
 .inquiries .inq-container .inquiries-form form .form-input {
   width: 1120px;
@@ -286,6 +288,69 @@ header nav .header-button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 200px;
+  gap: 50px;
   margin-top: 50px;
+}
+.inquiries .contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 8px;
+  width: 384px;
+  height: 176px;
+  text-align: center;
+}
+.inquiries .contact-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.inquiries .contact-card p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(133, 133, 133);
+}
+
+.footer {
+  height: 369.3px;
+  width: 100%;
+  background-color: rgb(3, 165, 155);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-container {
+  width: 1240px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(11, 175, 165);
+}
+.footer .footer-container .footer-logo {
+  width: 173.5px;
+  height: 33.3px;
+}
+.footer .footer-container .footer-logo p {
+  color: white;
+  width: 374px;
+  font-size: 16px;
+  font-weight: 200;
+}
+.footer .footer-container .footer-nav ul {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-container .footer-nav .menu-items {
+  color: white;
+}
+.footer .footer-copyrights p {
+  position: relative;
+  top: 10px;
+  left: 280px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
 }/*# sourceMappingURL=index.css.map */
