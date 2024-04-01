@@ -1,0 +1,264 @@
+@media only screen and (max-width: 900px) {
+  header {
+    width: 100%;
+    height: 10px;
+  }
+  header .main-nav {
+    display: none;
+  }
+  header .hamburger-nav {
+    display: flex;
+  }
+  header .hamburger-nav .hamburger-menu {
+    flex-direction: column;
+  }
+  header .hamburger-nav .menu-links {
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: right 0.3s ease;
+  }
+  header .hamburger-nav .menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+  header .hamburger-nav .menu-links.open {
+    display: flex;
+    right: 0;
+    z-index: 50;
+  }
+  .hero {
+    padding-block: 10px;
+    flex-direction: column;
+  }
+  .trending {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .trending .trending-images {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .trending .trending-images .long-sofa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .trending .trending-images .long-sofa .trending-text {
+    padding-inline: 20px;
+  }
+  .trending .trending-images .long-sofa .images-trend img {
+    width: 70%;
+  }
+  .trending .trending-images .long-sofa-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .trending .trending-images .long-sofa-2 .trending-text {
+    padding-inline: 20px;
+  }
+  .trending .trending-images .long-sofa-2 .images-trend img {
+    width: 70%;
+  }
+  .choose-us .chooseee {
+    flex-direction: column;
+    width: 100%;
+  }
+  .choose-us .chooseee .choose-container {
+    width: 100%;
+  }
+  .choose-us .chooseee .choose-pic {
+    display: none;
+  }
+  .inquiries .contacts h3 {
+    font-size: 15px;
+  }
+  .inquiries .contacts p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    padding-inline: 10px;
+    align-items: center;
+  }
+  header {
+    align-items: center;
+    width: 130%;
+    height: 10px;
+  }
+  header .main-nav {
+    display: none;
+  }
+  header .hamburger-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .hamburger-nav .hamburger-menu {
+    flex-direction: column;
+  }
+  header .hamburger-nav .menu-links {
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: right 0.3s ease;
+  }
+  header .hamburger-nav .menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+  header .hamburger-nav .menu-links.open {
+    display: flex;
+    right: 0;
+    z-index: 50;
+  }
+  .hero {
+    align-items: center;
+    text-align: center;
+    width: 120%;
+    flex-direction: column;
+  }
+  .hero .text-container {
+    align-items: center;
+  }
+  .trending {
+    align-items: center;
+    justify-content: center;
+    width: 130%;
+  }
+  .trending .trending-images {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .trending .trending-images .long-sofa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .trending .trending-images .long-sofa .trending-text {
+    padding-inline: 20px;
+  }
+  .trending .trending-images .long-sofa .trending-text a {
+    position: relative;
+    top: 40px;
+  }
+  .trending .trending-images .long-sofa .images-trend img {
+    width: 70%;
+  }
+  .trending .trending-images .long-sofa-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .trending .trending-images .long-sofa-2 .trending-text {
+    padding-inline: 20px;
+  }
+  .trending .trending-images .long-sofa-2 .trending-text a {
+    position: relative;
+    top: 40px;
+  }
+  .trending .trending-images .long-sofa-2 .images-trend img {
+    width: 70%;
+  }
+  .choose-us {
+    width: 130%;
+  }
+  .choose-us .chooseee {
+    flex-direction: column;
+    width: 100%;
+  }
+  .choose-us .chooseee .choose-container {
+    width: 100%;
+  }
+  .choose-us .chooseee .choose-container .choose-text h1 {
+    font-size: 45px;
+  }
+  .choose-us .chooseee .choose-pic {
+    display: none;
+  }
+  .inquiries {
+    width: 130%;
+  }
+  .inquiries .contacts {
+    width: 100%;
+    flex-direction: column;
+  }
+  .inquiries .contact-card {
+    width: 100%;
+  }
+  .footer {
+    height: 369.3px;
+    width: 130%;
+    background-color: rgb(3, 165, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .footer .footer-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(11, 175, 165);
+  }
+  .footer .footer-container .footer-logo {
+    width: 80%;
+    height: 33.3px;
+  }
+  .footer .footer-container .footer-logo p {
+    color: white;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .footer .footer-container .footer-nav ul {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .footer-container .footer-nav .menu-items {
+    color: white;
+  }
+  .footer .footer-copyrights p {
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+  }
+}/*# sourceMappingURL=media.css.map */

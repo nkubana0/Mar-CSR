@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/media.css" />
     <title>Home</title>
   </head>
   <body>
     <header class="container">
-      <nav>
+      <nav class="main-nav">
         <div class="logo">
           <img src="/static/img/Luxury.png" alt="logo" />
         </div>
@@ -20,7 +21,27 @@
         </ul>
         <a href="#" class="header-button">Contact</a>
       </nav>
+      <nav class="hamburger-nav">
+        <div class="logo"><img src="/static/img/Luxury.png" /></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <!-- Corrected placement of ul -->
+            <li><a href="#" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#" onclick="toggleMenu()">About Us</a></li>
+            <li><a href="#" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#" onclick="toggleMenu()">Blogs</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
+
     <section class="hero container">
       <div class="text-container">
         <h4>Trendy Collection</h4>
@@ -54,8 +75,10 @@
         </div>
         <div class="long-sofa-2">
           <div class="trending-text">
-            <h4>Long Sofa</h4>
-            <p>Structure almost highlights</p>
+            <div class="text">
+              <h4>Long Sofa</h4>
+              <p>Structure almost highlights</p>
+            </div>
             <div class="a-tag">
               <a href="#">SHOP NOW</a>
             </div>
@@ -71,43 +94,28 @@
         <div class="choose-container">
           <div class="choose-text">
             <h1>Why Choose <span>Us</span></h1>
-            <p>
-              Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
-              velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
-            </p>
+            <p>Donec vitae odio quis nisl dapibus malesuada.</p>
           </div>
           <div class="choose-icons">
             <div class="icon-text">
               <img src="/static/img/truck.svg" alt="delivery" />
               <h4>Fast & Free Shipping</h4>
-              <p>
-                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
-                velit. Aliquam vulputate.
-              </p>
+              <p>Donec vitae odio quis nisl dapibus malesuada.</p>
             </div>
             <div class="icon-text">
               <img src="/static/img/house.svg" alt="delivery" />
               <h4>Fast & Free Shipping</h4>
-              <p>
-                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
-                velit. Aliquam vulputate.
-              </p>
+              <p>Donec vitae odio quis nisl dapibus malesuada.</p>
             </div>
             <div class="icon-text">
               <img src="/static/img/circle.svg" alt="delivery" />
               <h4>Fast & Free Shipping</h4>
-              <p>
-                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
-                velit. Aliquam vulputate.
-              </p>
+              <p>Donec vitae odio quis nisl dapibus malesuada.</p>
             </div>
             <div class="icon-text">
               <img src="/static/img/return.svg" alt="delivery" />
               <h4>Fast & Free Shipping</h4>
-              <p>
-                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
-                velit. Aliquam vulputate.
-              </p>
+              <p>Donec vitae odio quis nisl dapibus malesuada.</p>
             </div>
           </div>
         </div>
@@ -123,38 +131,48 @@
           <h3>Do you have any inquiries</h3>
           <p>Fill up form below, our team will get back soon</p>
           <form>
-            <input type="text" placeholder="Name" class="form-input">
-            <input type="text" placeholder="Example@gmail.com" class="form-input">
-            <input type="text" placeholder="Phone" class="form-input">
-            <input type="text" placeholder="Subject" class="form-input">
-            <input type="text" placeholder="Your messsage" class="form-input-2">
-            <input type="submit" value="Submit" class="submit">
+            <input type="text" placeholder="Name" class="form-input" />
+            <input
+              type="text"
+              placeholder="Example@gmail.com"
+              class="form-input"
+            />
+            <input type="text" placeholder="Phone" class="form-input" />
+            <input type="text" placeholder="Subject" class="form-input" />
+            <input
+              type="text"
+              placeholder="Your messsage"
+              class="form-input-2"
+            />
+            <input type="submit" value="Submit" class="submit" />
           </form>
         </div>
       </div>
       <div class="contacts">
         <div class="contact-card">
-          <img src="/static/img/email.svg" alt="e-mail">
+          <img src="/static/img/email.svg" alt="e-mail" />
           <h3>Email</h3>
           <p>no-reply@luxury.com</p>
         </div>
         <div class="contact-card">
-          <img src="/static/img/call.png" alt="call">
+          <img src="/static/img/call.png" alt="call" />
           <h3>Call Us</h3>
           <p>+250-791-902-159</p>
         </div>
         <div class="contact-card">
-          <img src="/static/img/location.svg" alt="location">
+          <img src="/static/img/location.svg" alt="location" />
           <h3>Visit Us</h3>
-          <p>Kisimenti KG175 No.37 </p>
+          <p>Kisimenti KG175 No.37</p>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="/static/img/Luxury-footer.svg" alt="logo">
-          <p>Turn your room with luxury into a lot more minimalist and modern.</p>
+          <img src="/static/img/Luxury-footer.svg" alt="logo" />
+          <p>
+            Turn your room with luxury into a lot more minimalist and modern.
+          </p>
         </div>
         <div class="footer-nav">
           <ul>

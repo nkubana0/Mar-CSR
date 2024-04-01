@@ -25,46 +25,117 @@ body {
 
 .container {
   padding-inline: 100px;
+  padding-block: 100px;
 }
 
-.nav-active {
+/*.nav-active {
+  -webkit-box-shadow: 0px 11px 64px 0px rgba(142, 15, 15, 0.75);
+  -moz-box-shadow: 0px 11px 64px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 11px 64px 0px rgba(0, 0, 0, 0.75);
   background-color: white;
   z-index: 1000;
+}*/
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
 }
 
 header {
   width: 100%;
-  padding: 40px;
-  position: fixed;
+  /*position: fixed;*/
 }
-header nav {
+header .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul {
+header .main-nav ul {
   display: flex;
   gap: 10px;
 }
-header nav .menu-items {
+header .main-nav .menu-items {
   color: black;
 }
-header nav .logo {
+header .main-nav .logo {
   width: 120px;
   height: 32px;
 }
-header nav .logo img {
+header .main-nav .logo img {
   width: 100%;
   height: 100%;
 }
-header nav .header-button {
+header .main-nav .header-button {
   color: white;
   padding: 20px 40px;
   background-color: rgb(3, 165, 155);
   border-radius: 24px;
   width: -moz-fit-content;
   width: fit-content;
+}
+header .hamburger-nav {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hamburger-nav .hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+header .hamburger-nav .hamburger-menu .hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+header .hamburger-nav .hamburger-menu .hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+header .hamburger-nav .hamburger-menu .menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+header .hamburger-nav .hamburger-menu .menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+header .hamburger-nav .hamburger-menu .menu-links li {
+  list-style: none;
 }
 
 .hero {
@@ -78,7 +149,7 @@ header nav .header-button {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 440px;
+  width: 100%;
   height: 386px;
 }
 .hero .text-container h4 {
@@ -128,7 +199,7 @@ header nav .header-button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 50%;
   background-color: rgb(248, 255, 255);
 }
 .trending .trending-images .long-sofa .trending-text {
@@ -149,12 +220,15 @@ header nav .header-button {
   color: rgb(3, 165, 155);
   text-decoration: underline;
 }
+.trending .trending-images .long-sofa .images-trend {
+  width: 100%;
+}
 .trending .trending-images .long-sofa-2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
-  background-color: rgb(248, 255, 255);
+  width: 50%;
+  background-color: rgb(255, 252, 251);
 }
 .trending .trending-images .long-sofa-2 .trending-text {
   height: 215px;
@@ -174,6 +248,9 @@ header nav .header-button {
   color: rgb(3, 165, 155);
   text-decoration: underline;
 }
+.trending .trending-images .long-sofa-2 .images-trend {
+  width: 80%;
+}
 
 .choose-us {
   width: 100%;
@@ -186,6 +263,10 @@ header nav .header-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+.choose-us .chooseee .choose-container {
+  width: 100%;
 }
 .choose-us .chooseee .choose-container .choose-text h1 {
   font-size: 48px;
@@ -206,11 +287,13 @@ header nav .header-button {
   gap: 20px;
 }
 .choose-us .chooseee .choose-pic {
-  width: 100%;
   position: relative;
   margin-top: -100px;
+  width: 100%;
 }
 .choose-us .chooseee .choose-pic .office-img {
+  width: 70%;
+  height: 60vh;
   position: absolute;
   top: -100px;
   left: 50px;
@@ -226,7 +309,7 @@ header nav .header-button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 20px;
+  width: 100%;
 }
 .inquiries .inq-container {
   display: flex;
@@ -236,6 +319,9 @@ header nav .header-button {
   text-align: center;
   border: 1px solid rgb(236, 236, 236);
   width: 100%;
+}
+.inquiries .inq-container .inquiries-form {
+  width: 80%;
 }
 .inquiries .inq-container .inquiries-form h3 {
   font-weight: 500;
@@ -251,9 +337,10 @@ header nav .header-button {
   display: flex;
   flex-direction: column;
   padding-block: 20px;
+  width: 100%;
 }
 .inquiries .inq-container .inquiries-form form .form-input {
-  width: 1120px;
+  width: 100%;
   height: 64px;
   border-radius: 9px;
   border: 1px solid rgb(236, 236, 236);
@@ -263,7 +350,7 @@ header nav .header-button {
   margin-bottom: 10px;
 }
 .inquiries .inq-container .inquiries-form form .form-input-2 {
-  width: 1120px;
+  width: 100%;
   height: 170px;
   border-radius: 9px;
   border: 1px solid rgb(236, 236, 236);
@@ -274,7 +361,7 @@ header nav .header-button {
   margin-bottom: 10px;
 }
 .inquiries .inq-container .inquiries-form form .submit {
-  width: 1120px;
+  width: 100%;
   height: 64px;
   border: 1px;
   border-radius: 8px;
@@ -298,7 +385,7 @@ header nav .header-button {
   justify-content: space-around;
   border: 1px solid rgb(236, 236, 236);
   border-radius: 8px;
-  width: 384px;
+  width: 100%;
   height: 176px;
   text-align: center;
 }
@@ -322,7 +409,7 @@ header nav .header-button {
   justify-content: center;
 }
 .footer .footer-container {
-  width: 1240px;
+  width: 100%;
   height: 200px;
   display: flex;
   align-items: center;
@@ -349,8 +436,7 @@ header nav .header-button {
 .footer .footer-copyrights p {
   position: relative;
   top: 10px;
-  left: 280px;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 400;
   color: white;
 }/*# sourceMappingURL=index.css.map */
