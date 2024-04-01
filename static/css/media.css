@@ -1,3 +1,8 @@
+@media only screen and (max-width: 2000px) {
+  .choose-us .chooseee .choose-pic .office-img {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 900px) {
   header {
     width: 100%;
@@ -77,15 +82,18 @@
   .trending .trending-images .long-sofa-2 .images-trend img {
     width: 70%;
   }
+  .choose-us {
+    padding-block: 600px;
+    flex-direction: column;
+  }
   .choose-us .chooseee {
     flex-direction: column;
-    width: 100%;
   }
   .choose-us .chooseee .choose-container {
-    width: 100%;
+    padding-bottom: 350px;
   }
   .choose-us .chooseee .choose-pic {
-    display: none;
+    padding-bottom: 100px;
   }
   .inquiries .contacts h3 {
     font-size: 15px;
@@ -191,6 +199,7 @@
     width: 70%;
   }
   .choose-us {
+    padding-block: 500px;
     width: 130%;
   }
   .choose-us .chooseee {
@@ -204,7 +213,8 @@
     font-size: 45px;
   }
   .choose-us .chooseee .choose-pic {
-    display: none;
+    padding-bottom: 400px;
+    width: 90%;
   }
   .inquiries {
     width: 130%;
